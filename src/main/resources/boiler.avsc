@@ -1,0 +1,75 @@
+{
+    "type": "record",
+    "name": "Boiler",
+    "namespace": "com.globallogic.goliath.domain.model.acmeenggworks",
+    "fields": [
+        {
+            "name": "entityType",
+            "type": "string",
+            "default": "Boiler"
+        },
+        {
+            "name": "systemAttributes",
+            "type": "com.globallogic.goliath.domain.model.SystemAttributes"
+        },
+        {
+            "name": "context",
+            "type": "com.globallogic.goliath.domain.model.Context"
+        },
+        {
+            "name": "metaData",
+            "type": {
+                "type": "record",
+                "name": "BoilerMetaData",
+                "fields": [
+                    {
+                        "name": "name",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "resourceGUID",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    }
+                ]
+            }
+        },
+        {
+            "name": "observations",
+            "type": [
+                "null",
+                {
+                    "type": "record",
+                    "name": "BoilerObservation",
+                    "fields": [
+                        {
+                            "name": "temperature",
+                            "type": [
+                                "null",
+                                "double"
+                            ],
+                            "default": null
+                        },
+                        {
+                            "name": "timestamp",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "logicalType": "timestamp-millis",
+                            "default": null
+                        }
+                    ]
+                }
+            ],
+            "default": null
+        }
+    ]
+}

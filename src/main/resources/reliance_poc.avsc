@@ -1,0 +1,132 @@
+  {
+        "type": "record",
+        "name": "UsageEvent",
+        "namespace": "com.globallogic.goliath.domain.model.reliancepoc",
+        "fields": [
+            {
+                "name": "entityType",
+                "type": "string",
+                "default": "com.globallogic.goliath.domain.model.reliancepoc.UsageEvent"
+            },
+            {
+                "name": "systemAttributes",
+                "type": "com.globallogic.goliath.domain.model.SystemAttributes"
+            },
+            {
+                "name": "context",
+                "type": "com.globallogic.goliath.domain.model.Context"
+            },
+            {
+                "name": "metaData",
+                "type": {
+                    "type": "record",
+                    "name": "UsageEventMetaData",
+                    "fields": [
+                        {
+                            "name": "resourceGUID",
+                            "type": [
+                                "null",
+                                "string"
+                            ],
+                            "default": null
+                        }
+                    ]
+                }
+            },
+            {
+                "name": "observations",
+                "type": [
+                    "null",
+                    {
+                        "type": "record",
+                        "name": "UsageEventObservation",
+
+
+                        "fields": [
+                            {
+                                "name": "applicationName",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "action",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "category",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "networkType",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "ip",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "activity",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "eventType",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "latitude",
+                                "type": [
+                                    "null",
+                                    "double"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "longitude",
+                                "type": [
+                                    "null",
+                                    "double"
+                                ],
+                                "default": null
+                            },
+                            {
+                                "name": "timestamp",
+                                "type": [
+                                    "null",
+                                    "string"
+                                ],
+                                "default": null
+                            }
+                        ]
+                    }
+                ],
+                "default": null
+            }
+        ]
+    }

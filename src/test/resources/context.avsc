@@ -1,0 +1,23 @@
+{
+    "type": "record",
+    "namespace": "com.globallogic.goliath.domain.model",
+    "name": "Context",
+    "fields": [
+        {
+                        "name": "versionId",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    },
+                    {
+                        "name": "domainId",
+                        "type": [
+                            "null",
+                            "string"
+                        ],
+                        "default": null
+                    }
+    ]
+}

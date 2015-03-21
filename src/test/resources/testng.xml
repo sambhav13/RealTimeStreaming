@@ -1,0 +1,33 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+
+<suite name="Check1">
+	<test name="test1">
+
+		<classes>
+
+			<class name="goliath.analytics.controller.DomainModelControllerTest" />
+			<!-- <class name="goliath.analytics.process.AnalyticsDataSinkTest" /> -->
+			<class name="goliath.analytics.process.EventWriterTest" />
+			<class name="goliath.analytics.process.EventInterceptorTest" />
+			
+			<class name="goliath.analytics.sparkengine.dao.KafkaSinkTest" />
+			<class name="goliath.analytics.sparkengine.util.ProducerRegistratorTest" />
+		<!-- <class name="goliath.analytics.sparkengine.process.StreamReceiverTest" /> -->
+			<!--  <class name="goliath.analytics.sparkengine.parsers.FlumeMessageParserTest" /> -->
+			<class name="goliath.analytics.sparkengine.exception.SparkStreamingExceptionTest" />
+			<class name="goliath.analytics.util.DomainObjectLoaderTest"/>  
+			
+			<class 	name="goliath.analytics.protocol.MessageDecoderTest"/>
+			
+			
+			<!-- <class name="goliath.analytics.util.DomainObjectLoaderTest"/> <class 
+				name="goliath.analytics.util.ProducerRegistratorTest"/> 
+				 -->
+
+
+
+
+		</classes>
+	</test>
+
+</suite>
